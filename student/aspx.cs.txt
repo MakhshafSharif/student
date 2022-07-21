@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace student
+{
+    public class student
+    {
+            public int Id;
+            public string name;
+            public string Email;
+            public Double CGPA;
+
+    }
+    public student(int id, string name, string email, Double CGPA)
+    {
+        this.name = name;
+        this.id = id;
+        this.email = email;
+        this.CGPA = CGPA;
+
+    }
+    var students = new List<student>() {
+                new student(){ Id = 1, name="Ali" , Email="ali@gmail.com" ,CGPA="3.0"},
+                new student(){ Id = 2, name="Bilal", Email="bilal@gmail.com" ,CGPA="2.14"},
+                new student(){ Id = 3, name="Ahmad" , Email="ahmad@gmail.com" ,CGPA="2.67"},
+                new student(){ Id = 4, name="Amna" , Email="amna@gmail.com" ,CGPA="3.55"},
+                new student(){ Id = 5, name="Areeha" , Email="areeha@gmail.com" ,CGPA="3.55"},
+                new student(){ Id = 6, name="Zain" , Email="zain@gmail.com" ,CGPA="2.89"},
+                new student(){ Id = 7, name="Ayesha" , Email="ayesha@gmail.com" ,CGPA="1.98"},
+                };
+}
